@@ -1,0 +1,4 @@
+#!/bi/bash
+echo hell world
+read "$REPLY"
+echo "$REPLY"
