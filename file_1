@@ -1,4 +1,12 @@
-#!/bi/bash
-echo hell world
-read "$REPLY"
-echo "$REPLY"
+git changelog: false, credentialsId: '2ed61da7-008a-4051-8dc5-4c94c8a9f12a', url: 'https://github.com/amar50218/test_1.git'
+svn changelog: false, url: 'file:///F:/svn_workspace/BMW'
+git checkout https://github.com/amar50218/project.git
+            git add file1
+            git commit -m "script"
+            git push origin
+            
+  stage('checkout'){
+            steps{
+                git changelog: false, credentialsId: '2ed61da7-008a-4051-8dc5-4c94c8a9f12a', url: 'https://github.com/amar50218/test_1.git'
+            }
+        }
