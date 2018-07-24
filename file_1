@@ -10,3 +10,20 @@ git checkout https://github.com/amar50218/project.git
                 git changelog: false, credentialsId: '2ed61da7-008a-4051-8dc5-4c94c8a9f12a', url: 'https://github.com/amar50218/test_1.git'
             }
         }
+
+
+
+pipeline{
+    agent any 
+    stages {
+        stage('build'){
+            steps{
+                bat 'git checkout https://github.com/amar50218/project.git'
+                bat 'dir> file1'
+                bat 'git add .'
+                bat 'git commit '
+                bat 'git push origin '
+             }
+        }
+       }
+}
